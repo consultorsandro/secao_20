@@ -9,11 +9,11 @@ fn main() {
 
     println!("{}", multiply_by(2));
 
-    let Product = | a: i32, b: i32 | -> i32 {
+    let product = | a: i32, b: i32 | -> i32 {
         println!("Calculating product for you");
         return a * b;
     };
-    println!("{}", Product(3, 10));
-    println!("{}", Product(5, 8));
+    println!("{}", product(3, 10));
+    println!("{}", product(5, 8));
 
 }
