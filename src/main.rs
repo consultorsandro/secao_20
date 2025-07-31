@@ -1,19 +1,9 @@
-use std::iter::Product;
-
-fn main() {
+fn main() { // class 350
    let multiplier = 5;
 
-   let multiply_by = |value: i32| -> i32 {
-       return value * multiplier;
-   };
+   let multiply_by = |value| value * multiplier;
+   println!("{}", multiply_by(3 as u8));
 
-    println!("{}", multiply_by(2));
-
-    let product = | a: i32, b: i32 | -> i32 {
-        println!("Calculating product for you");
-        return a * b;
-    };
-    println!("{}", product(3, 10));
-    println!("{}", product(5, 8));
-
+   let mirror = |value| value;
+   println!("{}", mirror("why so serious?")); // Closure with different types
 }
