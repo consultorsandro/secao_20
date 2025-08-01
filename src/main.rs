@@ -1,3 +1,12 @@
+fn main() { // class 353
+   let mut numbers = vec![1, 2, 3, 4, 5];
+   let mut add_number = || numbers.push(6);
+   add_number();
+   add_number();
+   println!("{:?}", numbers);
+   
+}
+/*
 fn main() { // class 352
    let multiplier = 5;
 
@@ -12,6 +21,7 @@ fn main() { // class 352
    print_numbers();
    println!("{:?}", numbers);
 }
+*/
 
 /*
 fn main() { // class 350
